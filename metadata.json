@@ -1,0 +1,6 @@
+{
+  "name": "Dr. Robin Jain Dental Care",
+  "description": "Top-rated painless dental clinic in Vijay Nagar, Jabalpur offering implants, root canal, braces, and complete oral healthcare.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

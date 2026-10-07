@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dr. Robin Jain Dental Care — Painless Dentistry in Jabalpur | डॉ रॉबिन जैन डेंटल केयर</title>
+  <meta name="description" content="Top-rated painless dental clinic in Vijay Nagar, Jabalpur offering implants, root canal, braces, and complete oral healthcare.">
+  <meta property="og:title" content="Dr. Robin Jain Dental Care — Painless Dentistry in Jabalpur | डॉ रॉबिन जैन डेंटल केयर">
+  <meta property="og:description" content="Top-rated painless dental clinic in Vijay Nagar, Jabalpur offering implants, root canal, braces, and complete oral healthcare.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f2a3f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230f2a3f'/><text y='72' x='50' text-anchor='middle' font-size='58' font-family='Georgia' fill='%2314b8a6'>D</text></svg>">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body class="lock">
+
+  <!-- PRELOADER -->
+  <div id="pre">
+    <div class="pre-bg" id="preBg" role="img" aria-label="Dr. Robin Jain Dental Care Introduction"></div>
+    <div class="pre-overlay"></div>
+
+    <!-- Zoom & Fit Controls -->
+    <div class="pre-zoom-bar">
+      <span class="pre-zoom-label">Image:</span>
+      <button class="pre-zoom-btn" id="preZoomOut" title="Zoom Out" aria-label="Zoom Out">−</button>
+      <span class="pre-zoom-val" id="preZoomVal">100%</span>
+      <button class="pre-zoom-btn" id="preZoomIn" title="Zoom In" aria-label="Zoom In">+</button>
+      <button class="pre-zoom-btn fit-btn" id="preZoomFit" title="Fit to frame">Fit Frame</button>
+    </div>
+
+    <div class="pre-content">
+      <div class="pre-badge">Dr. Robin Jain Dental Care · Jabalpur</div>
+      <div class="pre-mark" id="preMark"></div>
+      <div class="pre-hi">डॉ रॉबिन जैन डेंटल केयर</div>
+      <div class="pre-bar"><i id="preBar"></i></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;width:100%;max-width:280px;gap:12px;">
+        <span class="pre-num" id="preNum">00</span>
+        <button class="pre-enter-btn" id="preEnterBtn">Enter Clinic →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cur-dot" id="curDot"></div>
+  <div class="cur-ring" id="curRing"></div>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announce" id="announceBar">
+    <span data-i18n="announce">Open today · <b>Painless dentistry</b> · 5.0★ from 22 Google reviews · Call 094253 87555</span>
+  </div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <nav class="nav">
+      <a href="#hero" class="brand" data-mag>
+        <div class="brand-mark">D</div>
+        <div class="brand-txt">
+          <b>Dr. Robin Jain Dental Care</b>
+          <small>डॉ रॉबिन जैन डेंटल केयर</small>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#story" data-i18n="nav.about">About</a>
+        <a href="#services" data-i18n="nav.services">Treatments</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#gallery" data-i18n="nav.gallery">Clinic</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#visit" data-i18n="nav.visit">Visit</a>
+      </div>
+
+      <div class="nav-right">
+        <div class="lang" id="lang">
+          <div class="lang-pill" id="langPill"></div>
+          <button data-lang="en" class="on">EN</button>
+          <button data-lang="hi">हिंदी</button>
+        </div>
+        <a href="#appointment" class="btn btn-teal btn-sm" data-mag>
+          <span data-i18n="cta.book">Book Appointment</span>
+        </a>
+        <button class="burger" id="burger" aria-label="Menu"><i></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- DRAWER -->
+  <div class="drawer" id="drawer">
+    <a href="#story" class="d-link" data-i18n="nav.about">About</a>
+    <a href="#services" class="d-link" data-i18n="nav.services">Treatments</a>
+    <a href="#process" class="d-link" data-i18n="nav.process">Process</a>
+    <a href="#gallery" class="d-link" data-i18n="nav.gallery">Clinic</a>
+    <a href="#reviews" class="d-link" data-i18n="nav.reviews">Reviews</a>
+    <a href="#visit" class="d-link" data-i18n="nav.visit">Visit</a>
+    <div class="drawer-foot">
+      <a href="#appointment" class="btn btn-teal" data-i18n="cta.book">Book Appointment</a>
+      <a href="#" class="btn btn-wa" id="drawerWa">WhatsApp</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-grid-lines"></div>
+
+      <div class="hero-top">
+        <div class="wrap">
+          <div class="trust-pills">
+            <div class="t-pill">
+              <span class="stars">★★★★★</span>
+              <b>5.0</b>
+              <small data-i18n="hero.reviews">22 Google reviews</small>
+            </div>
+          </div>
+          <div class="hero-side-card">
+            <div class="pulse-ring"></div>
+            <div>
+              <b data-i18n="hero.status">Opens at 11:00 AM</b>
+              <small data-i18n="hero.statusSub">Mon – Sat · Ukhri Road, Jabalpur</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="hero-hindi" data-i18n="hero.hindi">डॉ रॉबिन जैन डेंटल केयर · जबलपुर</div>
+        <h1 class="hero-title">
+          <span class="ln"><span data-i18n="hero.t1">Gentle dentistry.</span></span>
+          <span class="ln"><span data-i18n="hero.t2">Honest advice.</span></span>
+          <span class="ln"><span><em data-i18n="hero.t3">Lasting smiles.</em></span></span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.sub">
+          A modern, hygienic dental clinic on Ukhri Main Road — led by Dr. Robin Jain. Clear explanations, painless treatment, and a calm environment that puts even the most anxious patients at ease.
+        </p>
+        <div class="hero-cta">
+          <a href="#appointment" class="btn btn-teal" data-mag><span data-i18n="cta.bookNow">Book Appointment</span></a>
+          <a href="#services" class="btn btn-ghost" data-mag><span data-i18n="cta.viewServices">View Treatments</span></a>
+        </div>
+
+        <div class="hero-strip">
+          <div class="hero-stat"><b>5<i>.0★</i></b><small data-i18n="stat.rating">Google Rating</small></div>
+          <div class="hero-stat"><b>22<i>+</i></b><small data-i18n="stat.reviews">Patient Reviews</small></div>
+          <div class="hero-stat"><b>10<i>+</i></b><small data-i18n="stat.treatments">Treatments Offered</small></div>
+          <div class="hero-stat"><b>100<i>%</i></b><small data-i18n="stat.painless">Painless Focus</small></div>
+        </div>
+      </div>
+
+      <div class="scroll-cue"><span data-i18n="scroll">Scroll</span><i></i></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="mq-track" id="mqTrack"></div>
+    </div>
+
+    <!-- TRUST -->
+    <section class="trust-sec">
+      <div class="wrap">
+        <div class="trust-grid">
+          <div class="trust-card reveal">
+            <div class="trust-num">5<i>.0</i></div>
+            <h4 data-i18n="trust1.t">Rated by Patients</h4>
+            <p data-i18n="trust1.d">22 verified Google reviews with a perfect 5-star score.</p>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-num">15<i>+</i></div>
+            <h4 data-i18n="trust2.t">Years of Practice</h4>
+            <p data-i18n="trust2.d">Dr. Robin Jain brings years of surgical & restorative experience.</p>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-num">100<i>%</i></div>
+            <h4 data-i18n="trust3.t">Sterilised Setup</h4>
+            <p data-i18n="trust3.d">Autoclaved instruments, single-use disposables, hygienic protocol.</p>
+          </div>
+          <div class="trust-card reveal">
+            <div class="trust-num">₹<i>—</i></div>
+            <h4 data-i18n="trust4.t">Transparent Pricing</h4>
+            <p data-i18n="trust4.d">Full cost explained before treatment begins. No hidden charges.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY / DOCTOR -->
+    <section class="story-sec" id="story">
+      <div class="wrap">
+        <div class="story-grid">
+          <div class="story-media reveal">
+            <div class="story-badge"><span class="dot-live"></span><span data-i18n="story.open">Accepting Patients</span></div>
+            <div class="m m1"></div>
+            <div class="m m2"></div>
+          </div>
+          <div class="story-copy">
+            <div class="eyebrow reveal" data-i18n="story.eyebrow">Meet Your Dentist</div>
+            <h2 class="sec-title reveal">
+              <span class="mask-line"><span data-i18n="story.h1">You'll always know</span></span>
+              <span class="mask-line"><span><em data-i18n="story.h2">what's happening.</em></span></span>
+            </h2>
+            <p class="reveal" data-i18n="story.p1">
+              At Dr. Robin Jain Dental Care, every visit starts the same way — with a conversation. Dr. Jain walks you through what he sees, what your options are, and what each one means. <b>No jargon. No pressure. No rushed decisions.</b>
+            </p>
+            <p class="reveal" data-i18n="story.p2">
+              Patients often describe the treatment as genuinely painless, and the clinic as calm and spotless. From a simple cleaning to a full implant, every procedure follows the same careful, gentle protocol — with follow-ups to make sure you healed well.
+            </p>
+            <p class="reveal" data-i18n="story.p3">
+              The clinic is located on Ukhri Main Road, next to the MPEB power house and Go Gas pump in Vijay Nagar — easy to reach, with parking available.
+            </p>
+
+            <div class="doc-sign reveal">
+              <div class="doc-av">RJ</div>
+              <div>
+                <b>Dr. Robin Jain</b>
+                <small data-i18n="story.role">BDS · Dental Surgeon · Implantologist</small>
+              </div>
+            </div>
+
+            <div class="pillars">
+              <div class="pillar reveal">
+                <h4 data-i18n="pillar1.t">Painless Care</h4>
+                <p data-i18n="pillar1.d">Modern anaesthesia & gentle technique for a truly comfortable visit.</p>
+              </div>
+              <div class="pillar reveal">
+                <h4 data-i18n="pillar2.t">Clear Advice</h4>
+                <p data-i18n="pillar2.d">Every option explained in plain language before we begin.</p>
+              </div>
+              <div class="pillar reveal">
+                <h4 data-i18n="pillar3.t">Clean Clinic</h4>
+                <p data-i18n="pillar3.d">Sterilised instruments & single-use disposables for every patient.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-sec" id="services">
+      <div class="wrap">
+        <div class="services-head">
+          <div>
+            <div class="eyebrow on-dark reveal" data-i18n="svc.eyebrow">Treatments</div>
+            <h2 class="sec-title on-dark reveal" style="margin-top:18px">
+              <span class="mask-line"><span data-i18n="svc.h1">Complete dental care,</span></span>
+              <span class="mask-line"><span><em data-i18n="svc.h2">under one roof.</em></span></span>
+            </h2>
+          </div>
+          <p class="sec-lead on-dark reveal" style="max-width:36ch" data-i18n="svc.lead">
+            From routine check-ups to full-mouth rehabilitation — every treatment performed in-clinic with modern equipment.
+          </p>
+        </div>
+
+        <div class="svc-grid" id="svcGrid"></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process-sec" id="process">
+      <div class="wrap">
+        <div class="eyebrow reveal" data-i18n="proc.eyebrow">How It Works</div>
+        <h2 class="sec-title reveal" style="margin:18px 0 0">
+          <span class="mask-line"><span data-i18n="proc.h1">A calm, clear</span></span>
+          <span class="mask-line"><span><em data-i18n="proc.h2">four-step visit.</em></span></span>
+        </h2>
+
+        <div class="process-grid">
+          <div class="p-step reveal">
+            <div class="p-dot"></div>
+            <div class="p-num">01</div>
+            <h3 data-i18n="proc1.t">Consultation</h3>
+            <p data-i18n="proc1.d">We listen first — your symptoms, your history, your concerns. No treatment until you understand it.</p>
+          </div>
+          <div class="p-step reveal">
+            <div class="p-dot"></div>
+            <div class="p-num">02</div>
+            <h3 data-i18n="proc2.t">Diagnosis</h3>
+            <p data-i18n="proc2.d">Digital X-rays and clinical examination to see exactly what's happening beneath the surface.</p>
+          </div>
+          <div class="p-step reveal">
+            <div class="p-dot"></div>
+            <div class="p-num">03</div>
+            <h3 data-i18n="proc3.t">Treatment</h3>
+            <p data-i18n="proc3.d">Gentle, sterilised, painless procedure — with modern anaesthesia and calm hands.</p>
+          </div>
+          <div class="p-step reveal">
+            <div class="p-dot"></div>
+            <div class="p-num">04</div>
+            <h3 data-i18n="proc4.t">Aftercare</h3>
+            <p data-i18n="proc4.d">Clear home-care instructions and a scheduled follow-up to make sure you healed well.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gal-sec" id="gallery">
+      <div class="wrap">
+        <div class="gal-head">
+          <div>
+            <div class="eyebrow reveal" data-i18n="gal.eyebrow">Inside The Clinic</div>
+            <h2 class="sec-title reveal" style="margin-top:18px">
+              <span class="mask-line"><span data-i18n="gal.h1">Clean, calm,</span></span>
+              <span class="mask-line"><span><em data-i18n="gal.h2">and modern.</em></span></span>
+            </h2>
+          </div>
+          <p class="sec-lead reveal" style="max-width:32ch" data-i18n="gal.lead">
+            A glimpse of the space where your smile gets the attention it deserves.
+          </p>
+        </div>
+        <div class="gal-grid" id="galGrid"></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="rev-sec" id="reviews">
+      <div class="wrap">
+        <div class="eyebrow reveal" data-i18n="rev.eyebrow">Patient Voices</div>
+        <h2 class="sec-title reveal" style="margin:18px 0 46px">
+          <span class="mask-line"><span data-i18n="rev.h1">22 reviews.</span></span>
+          <span class="mask-line"><span><em data-i18n="rev.h2">A perfect five.</em></span></span>
+        </h2>
+
+        <div class="rev-top">
+          <div class="rev-score">
+            <b>5.0</b>
+            <div class="meta">
+              <span class="stars">★★★★★</span>
+              <small data-i18n="rev.based">Based on 22 Google reviews</small>
+            </div>
+          </div>
+          <div class="rev-bars">
+            <div class="rev-bar"><span>5★</span><div class="track"><i data-w="100"></i></div><span>22</span></div>
+            <div class="rev-bar"><span>4★</span><div class="track"><i data-w="0"></i></div><span>0</span></div>
+            <div class="rev-bar"><span>3★</span><div class="track"><i data-w="0"></i></div><span>0</span></div>
+            <div class="rev-bar"><span>2★</span><div class="track"><i data-w="0"></i></div><span>0</span></div>
+            <div class="rev-bar"><span>1★</span><div class="track"><i data-w="0"></i></div><span>0</span></div>
+          </div>
+        </div>
+
+        <div class="rev-grid" id="revGrid"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-sec" id="faq">
+      <div class="wrap">
+        <div class="faq-grid">
+          <div>
+            <div class="eyebrow reveal" data-i18n="faq.eyebrow">Common Questions</div>
+            <h2 class="sec-title reveal" style="margin:18px 0 24px">
+              <span class="mask-line"><span data-i18n="faq.h1">Before you</span></span>
+              <span class="mask-line"><span><em data-i18n="faq.h2">visit us.</em></span></span>
+            </h2>
+            <p class="sec-lead reveal" data-i18n="faq.lead">
+              Still unsure about something? Call us at 094253 87555 — we're happy to answer any question, even if you're not booking yet.
+            </p>
+            <a href="tel:09425387555" class="btn btn-ink reveal" style="margin-top:22px" data-mag>
+              <span data-i18n="cta.call">Call the Clinic</span>
+            </a>
+          </div>
+          <div class="faq-list" id="faqList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT -->
+    <section class="appt-sec" id="appointment">
+      <div class="wrap">
+        <div class="appt-grid">
+          <div>
+            <div class="eyebrow on-dark reveal" data-i18n="appt.eyebrow">Book a Visit</div>
+            <h2 class="sec-title on-dark reveal" style="margin:18px 0 20px">
+              <span class="mask-line"><span data-i18n="appt.h1">Reserve your</span></span>
+              <span class="mask-line"><span><em data-i18n="appt.h2">appointment slot.</em></span></span>
+            </h2>
+            <p class="sec-lead on-dark reveal" data-i18n="appt.lead">
+              Fill in the form and we'll confirm your slot on WhatsApp within minutes during clinic hours. For emergencies, please call directly.
+            </p>
+
+            <div class="contact-list">
+              <div class="c-item reveal">
+                <div class="ic">📍</div>
+                <div>
+                  <h5 data-i18n="appt.addrT">Clinic Address</h5>
+                  <p>Ukhri Main Road, beside MPEB Power House,<br>next to Go Gas Auto Pump, Vijay Nagar,<br>Jabalpur, MP 482002</p>
+                </div>
+              </div>
+              <div class="c-item reveal">
+                <div class="ic">📞</div>
+                <div>
+                  <h5 data-i18n="appt.callT">Call / WhatsApp</h5>
+                  <p><a href="tel:09425387555">094253 87555</a></p>
+                </div>
+              </div>
+              <div class="c-item reveal">
+                <div class="ic">🕐</div>
+                <div>
+                  <h5 data-i18n="appt.hoursT">Clinic Hours</h5>
+                  <p data-i18n="appt.hours">Mon – Sat · 11:00 AM – 8:30 PM<br>Sunday · By appointment</p>
+                </div>
+              </div>
+              <div class="c-item reveal" style="border-bottom:0">
+                <div class="ic">🚨</div>
+                <div>
+                  <h5 data-i18n="appt.emergT">Dental Emergency</h5>
+                  <p data-i18n="appt.emerg">Severe pain, swelling or trauma — call us immediately.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="appt-form reveal" id="apptFormWrap">
+            <form id="apptForm" novalidate>
+              <div class="f-row">
+                <div class="f-field">
+                  <label data-i18n="f.name">Full Name <i>*</i></label>
+                  <input type="text" name="name" autocomplete="name" data-i18n-ph="f.namePh" placeholder="e.g. Nehal Jain">
+                  <div class="f-err"></div>
+                </div>
+                <div class="f-field">
+                  <label data-i18n="f.phone">Phone <i>*</i></label>
+                  <input type="tel" name="phone" inputmode="numeric" autocomplete="tel" data-i18n-ph="f.phonePh" placeholder="10-digit number">
+                  <div class="f-err"></div>
+                </div>
+              </div>
+
+              <div class="f-row">
+                <div class="f-field">
+                  <label data-i18n="f.date">Preferred Date <i>*</i></label>
+                  <input type="date" name="date">
+                  <div class="f-err"></div>
+                </div>
+                <div class="f-field">
+                  <label data-i18n="f.time">Preferred Time <i>*</i></label>
+                  <input type="time" name="time">
+                  <div class="f-err"></div>
+                </div>
+              </div>
+
+              <div class="f-row">
+                <div class="f-field">
+                  <label data-i18n="f.treatment">Treatment Needed <i>*</i></label>
+                  <select name="treatment">
+                    <option value="" data-i18n="f.select">Select…</option>
+                    <option data-i18n="t.checkup">General Check-up & Cleaning</option>
+                    <option data-i18n="t.rct">Root Canal Treatment</option>
+                    <option data-i18n="t.implant">Dental Implant</option>
+                    <option data-i18n="t.braces">Braces / Aligners</option>
+                    <option data-i18n="t.whitening">Teeth Whitening</option>
+                    <option data-i18n="t.crown">Crown / Bridge</option>
+                    <option data-i18n="t.kids">Kids Dentistry</option>
+                    <option data-i18n="t.pain">Tooth Pain / Emergency</option>
+                    <option data-i18n="t.other">Other / Not Sure</option>
+                  </select>
+                  <div class="f-err"></div>
+                </div>
+                <div class="f-field">
+                  <label data-i18n="f.visit">Visit Type</label>
+                  <select name="visit">
+                    <option data-i18n="f.v1">First Visit</option>
+                    <option data-i18n="f.v2">Follow-up</option>
+                    <option data-i18n="f.v3">Second Opinion</option>
+                  </select>
+                  <div class="f-err"></div>
+                </div>
+              </div>
+
+              <div class="f-row">
+                <div class="f-field full">
+                  <label data-i18n="f.notes">Describe Your Concern</label>
+                  <textarea name="notes" data-i18n-ph="f.notesPh" placeholder="Briefly describe the issue, or any special requirements…"></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-teal appt-submit" data-mag id="apptSubmit">
+                <span data-i18n="cta.confirmAppt">Confirm Appointment Request</span>
+              </button>
+              <div class="appt-alt">
+                <span data-i18n="appt.orCall">or call us directly at</span>
+                <a href="tel:09425387555"> 094253 87555</a>
+              </div>
+            </form>
+
+            <div class="appt-success" id="apptSuccess">
+              <div class="tick">✓</div>
+              <h3 data-i18n="appt.thanks">Appointment request received!</h3>
+              <p data-i18n="appt.thanksSub">We've saved your request. The clinic will confirm your slot shortly on WhatsApp or phone.</p>
+              <div class="ref" id="apptRef">RJDC-000000</div>
+              <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+                <a href="#" class="btn btn-wa btn-sm" id="apptWa" data-mag><span data-i18n="cta.sendWa">Send on WhatsApp</span></a>
+                <button class="btn btn-ghost btn-sm" id="apptAgain" data-mag style="border-color:rgba(248,246,241,.3);color:var(--cream)">
+                  <span data-i18n="cta.another">Book Another</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-sec" id="visit">
+      <div class="wrap">
+        <div class="map-head">
+          <div>
+            <div class="eyebrow on-dark reveal" data-i18n="visit.eyebrow">Find Us</div>
+            <h2 class="sec-title on-dark reveal" style="margin-top:18px">
+              <span class="mask-line"><span data-i18n="visit.h1">Right on</span></span>
+              <span class="mask-line"><span><em data-i18n="visit.h2">Ukhri Main Road.</em></span></span>
+            </h2>
+          </div>
+          <p class="sec-lead on-dark reveal" style="max-width:32ch" data-i18n="visit.lead">
+            Beside MPEB Power House, next to Go Gas Auto Pump — Vijay Nagar, Jabalpur.
+          </p>
+        </div>
+
+        <div class="map-frame reveal">
+          <iframe
+            title="Dr. Robin Jain Dental Care location"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Dr+Robin+Jain+Dental+Care+Ukhri+Road+MPEB+Power+House+Vijay+Nagar+Jabalpur&output=embed">
+          </iframe>
+          <div class="map-card">
+            <h5>Dr. Robin Jain Dental Care</h5>
+            <p>Ukhri Main Road, beside MPEB Power House, next to Go Gas Auto Pump, Vijay Nagar, Jabalpur, MP 482002</p>
+            <div class="plus">5WH8+J6 JABALPUR</div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Dr+Robin+Jain+Dental+Care+Ukhri+Road+Vijay+Nagar+Jabalpur"
+               target="_blank" rel="noopener" class="btn btn-teal btn-sm" data-mag>
+              <span data-i18n="cta.directions">Get Directions</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <div class="brand">
+            <div class="brand-mark">D</div>
+            <div class="brand-txt" style="color:var(--cream)">
+              <b style="color:var(--cream)">Dr. Robin Jain Dental Care</b>
+              <small style="color:var(--teal-2)">डॉ रॉबिन जैन डेंटल केयर</small>
+            </div>
+          </div>
+          <p data-i18n="foot.about">
+            A modern dental clinic in Vijay Nagar, Jabalpur — offering painless treatment, clear advice and honest pricing. Rated 5.0★ by 22 patients.
+          </p>
+          <div class="foot-social">
+            <a href="https://wa.me/919425387555" target="_blank" rel="noopener" aria-label="WhatsApp" data-mag>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2m0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" data-mag>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" data-mag>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6c-.3-.04-1.3-.13-2.45-.13-2.42 0-4.08 1.48-4.08 4.2v2.23H7.5V13h2.67v8h3.33z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="foot-col">
+          <h6 data-i18n="foot.explore">Explore</h6>
+          <a href="#story" data-i18n="nav.about">About</a>
+          <a href="#services" data-i18n="nav.services">Treatments</a>
+          <a href="#process" data-i18n="nav.process">Process</a>
+          <a href="#gallery" data-i18n="nav.gallery">Clinic</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        </div>
+
+        <div class="foot-col">
+          <h6 data-i18n="foot.contact">Contact</h6>
+          <a href="tel:09425387555">094253 87555</a>
+          <a href="https://wa.me/919425387555" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="#appointment" data-i18n="cta.book">Book Appointment</a>
+          <a href="#visit" data-i18n="foot.directions">Get Directions</a>
+        </div>
+
+        <div class="foot-col">
+          <h6 data-i18n="foot.hours">Clinic Hours</h6>
+          <div class="foot-hours now"><span data-i18n="foot.today">Today</span><b id="todayHours">—</b></div>
+          <div class="foot-hours"><span data-i18n="foot.monsat">Mon – Sat</span><b>11:00 – 20:30</b></div>
+          <div class="foot-hours"><span data-i18n="foot.sun">Sunday</span><b data-i18n="foot.byappt">By Appointment</b></div>
+          <p style="margin-top:14px;font-size:.76rem;color:rgba(248,246,241,.5);line-height:1.6" data-i18n="foot.addr">
+            Ukhri Main Road, beside MPEB Power House, next to Go Gas Auto Pump, Vijay Nagar, Jabalpur 482002
+          </p>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> Dr. Robin Jain Dental Care · <span data-i18n="foot.rights">All rights reserved.</span></span>
+        <button class="admin-link" id="openAdmin">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span data-i18n="foot.admin">Admin</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/919425387555?text=Hello%20Dr.%20Robin%20Jain%20Dental%20Care%2C%20I%27d%20like%20to%20book%20an%20appointment."
+     target="_blank" rel="noopener" class="wa-float" id="waFloat" aria-label="Chat on WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2m0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2"/></svg>
+    <span data-i18n="cta.chat">Chat with us</span>
+  </a>
+
+  <!-- LIGHTBOX -->
+  <div class="lb" id="lb" style="display:none">
+    <button class="lb-x" id="lbX" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lb-img" id="lbImg" style="width:min(1000px,88vw);aspect-ratio:4/3;border-radius:var(--r);background-size:cover;background-position:center;box-shadow:0 50px 120px -30px rgba(0,0,0,.9)"></div>
+  </div>
+
+  <!-- ADMIN DIALOG -->
+  <div class="adm" id="adm">
+    <div class="adm-login" id="admLogin">
+      <div class="adm-box">
+        <div class="lock">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Clinic Admin Access</h3>
+        <p>Restricted area. Enter the management password to continue.</p>
+        <div class="adm-msg" id="admMsg"></div>
+        <form id="admForm">
+          <div class="f-field" style="margin-bottom:14px">
+            <label style="color:rgba(248,246,241,.55)">Password</label>
+            <input type="password" id="admPass" autocomplete="current-password" placeholder="••••••••"
+                   style="background:rgba(11,28,42,.5);border:1px solid var(--line-light);border-radius:12px;padding:13px 15px;font-size:.88rem;color:var(--cream);width:100%">
+          </div>
+          <button type="submit" class="btn btn-teal" style="width:100%;padding:15px" id="admBtn">
+            <span>Unlock Dashboard</span>
+          </button>
+        </form>
+        <div class="adm-hint">
+          Demo password: <code>robin9300</code><br>
+          <span style="opacity:.75">Client-side demo lock for preview. In production this is replaced by server-side authentication with hashed credentials and session tokens.</span>
+        </div>
+        <button class="mini" style="margin-top:18px;width:100%" id="admClose">← Back to website</button>
+      </div>
+    </div>
+
+    <div class="adm-shell" id="admShell">
+      <aside class="adm-side" id="admSide">
+        <div class="a-brand">
+          <div class="brand-mark" style="width:34px;height:34px;font-size:1.05rem;border-radius:10px">D</div>
+          <div>
+            <b>RJ Dental Admin</b>
+            <small>Control Panel</small>
+          </div>
+        </div>
+        <button class="a-link on" data-view="dash">📊 Dashboard</button>
+        <button class="a-link" data-view="appt">📅 Appointments <span class="badge" id="badgeAppt">0</span></button>
+        <button class="a-link" data-view="services">🦷 Services Manager</button>
+        <button class="a-link" data-view="content">✏️ Website Content</button>
+        <button class="a-link" data-view="settings">⚙️ Settings</button>
+        <button class="a-link" data-view="security">🔒 Security</button>
+        <div class="a-spacer"></div>
+        <button class="a-logout" id="admLogout">↩ Logout</button>
+      </aside>
+
+      <main class="adm-main" id="admMain"></main>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts"></div>
+
+  <!-- CDN LIBS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <!-- APP SCRIPT -->
+  <script type="module" src="/src/clinic.js"></script>
+</body>
+</html>
